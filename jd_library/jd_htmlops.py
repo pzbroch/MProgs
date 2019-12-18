@@ -3,7 +3,7 @@
 #----------------------------#
 #  Various HTML Operations   #
 #============================#
-# Ver. 0.1 (2019-12-17)      #
+# Ver. 0.2 (2019-12-18)      #
 # (C) 2019 Przemyslaw Zbroch #
 ##############################
 
@@ -34,7 +34,7 @@
 
 
 def buildHtmlPage(pageTitle, bodyContent):
-    tmpFile = open('pagebase.html','rt')
+    tmpFile = open('jd_library/pagebase.html','rt')
     pageBase = tmpFile.read(1024)
     tmpFile.close()
     return pageBase.format(pageTitle, bodyContent)
